@@ -1,6 +1,6 @@
 package algorithms.search;
 import java.util.*;
-public class ConnectedCellInAGrid20160615Wed1121 {
+public class ConnectedCellInAGrid {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -19,22 +19,29 @@ public class ConnectedCellInAGrid20160615Wed1121 {
 			}
 		}
 		System.out.println(max);
+		for (int i = 0; i < r; i++) {
+			for (int j = 0; j < c; j++) {
+				System.out.print(mtx[i][j] + "　");
+			}
+			System.out.println();
+		}
 		sc.close();
 	}
 	
 	private static int countThisConnection(int[][] mtx, int it, int jt) {
 		mtx[it][jt] = 0;
+		int cnt = 0;
 		for (int i = it - 1 < 0 ? 0 : it - 1; i < mtx.length && i <= it + 1; i++) {
 			for (int j = jt - 1 < 0 ? 0 : jt - 1 ; j < mtx[0].length && j <= jt + 1; j++) {
-				if (mtx[i][j] == 1	) {
+				if (mtx[i][j] == 1) {
 					mtx[i][j] = 0;
-					return countThisConnection(mtx, i, j) + 1;
+					cnt += countThisConnection(mtx, i, j);
 				}
 			}
 		}
-		return 1;
+		return cnt + 1;
 	}
 
 }
 //https://www.hackerrank.com/challenges/connected-cell-in-a-grid
-//20160615Wed11:20 duration:37m54s27 WrongAnswerOnTestCase#3#6 @BryanBo-Cao
+//20160615Wed14:26 duration:1m57s65 Accepted @BryanBo-Cao
