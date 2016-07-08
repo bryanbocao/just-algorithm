@@ -34,3 +34,5 @@ public class MissingNumbers20160608Wed1238 {
 	}
 
 }
+//https://www.hackerrank.com/challenges/missing-numbers
+//20160608Wed12:38 @github.com/BryanBo-Cao,hackerrank.com/bryanbocao,linkedin.com/in/bryanbocao
