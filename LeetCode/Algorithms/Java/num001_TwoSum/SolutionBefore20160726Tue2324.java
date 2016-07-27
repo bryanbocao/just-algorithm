@@ -1,6 +1,6 @@
-package algorithms.num1;
+package algorithms.num001_TwoSum;
 
-public class Solution {
+public class SolutionBefore20160726Tue2324 {
 
     public int[] twoSum(int[] nums, int target) {
     	int sum;

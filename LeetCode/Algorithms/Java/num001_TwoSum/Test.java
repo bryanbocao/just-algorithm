@@ -1,4 +1,4 @@
-package algorithms.num1;
+package algorithms.num001_TwoSum;
 
 public class Test {
 
