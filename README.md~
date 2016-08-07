@@ -27,15 +27,6 @@ public class CompareTheTriplets {
 //https://www.hackerrank.com/challenges/compare-the-triplets
 //20160714Thu14:46 duration:7m42s10 Accepted @github.com/BryanBo-Cao,hackerrank.com/bryanbocao,linkedin.com/in/bryanbocao
 ```
-Delete 
-```
-package algorithms.warmup;
-```
-and
-```
-//https://www.hackerrank.com/challenges/compare-the-triplets
-//20160714Thu14:46 duration:7m42s10 Accepted @github.com/BryanBo-Cao,hackerrank.com/bryanbocao,linkedin.com/in/bryanbocao
-```
 You would submit the code like this:
 ```
 import java.util.*;
