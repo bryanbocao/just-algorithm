@@ -1,6 +1,8 @@
 # Algorithms
 This repository is to record my and others' decent solutions found. In terms of other's solutions I will refer to its original place.
 
+Testing code instructions:
+##Option 1:
 If you want to test these code, please delete the first line of package statement and the last few comments, then submit the rest of the code.
 For example, the solution of CompareTheTriplets is:
 ```
@@ -57,4 +59,12 @@ public class CompareTheTriplets {
 	}
 
 }
+```
+
+##Option 2:
+Some problems just need some blocks of the code but not the entire scripts, in this case just copy the scrips inside these two tags
+```
+//BryanBo-Cao's code ====== start 
+
+//BryanBo-Cao's code ====== end
 ```
