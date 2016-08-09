@@ -19,7 +19,7 @@ return 13.
 Note: 
 You may assume k is always valid, 1 ≤ k ≤ n2.
  */
-package algorithms.num379_KthSmallestElementInASortedMatrix;
+package algorithms.num378_KthSmallestElementInASortedMatrix;
 
 import java.util.HashMap;
 import java.util.Map;
