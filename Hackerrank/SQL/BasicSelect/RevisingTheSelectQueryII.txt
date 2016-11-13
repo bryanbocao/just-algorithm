@@ -1,1 +1,3 @@
 SELECT * FROM CITY
+
+https://www.hackerrank.com/challenges/revising-the-select-query-2
