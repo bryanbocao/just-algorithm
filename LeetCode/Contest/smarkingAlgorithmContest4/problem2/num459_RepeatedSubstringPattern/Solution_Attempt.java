@@ -1,4 +1,4 @@
-package smarkingAlgorithmContest4.question2.num459_RepeatedSubstringPattern;
+package smarkingAlgorithmContest4.problem2.num459_RepeatedSubstringPattern;
 
 public class Solution_Attempt {
     public boolean repeatedSubstringPattern(String str) {

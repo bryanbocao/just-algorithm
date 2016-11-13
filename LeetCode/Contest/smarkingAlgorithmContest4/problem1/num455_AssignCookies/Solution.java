@@ -1,4 +1,4 @@
-package smarkingAlgorithmContest4.question1.num455_AssignCookies;
+package smarkingAlgorithmContest4.problem1.num455_AssignCookies;
 
 import java.util.Arrays;
 

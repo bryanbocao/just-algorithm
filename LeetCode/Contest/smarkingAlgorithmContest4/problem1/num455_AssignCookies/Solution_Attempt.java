@@ -1,4 +1,4 @@
-package smarkingAlgorithmContest4.question1.num455_AssignCookies;
+package smarkingAlgorithmContest4.problem1.num455_AssignCookies;
 
 public class Solution_Attempt {
     public int findContentChildren(int[] g, int[] s) {

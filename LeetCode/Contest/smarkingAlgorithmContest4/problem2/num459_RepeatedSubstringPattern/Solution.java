@@ -1,13 +1,14 @@
-package smarkingAlgorithmContest4.question2.num459_RepeatedSubstringPattern;
+package smarkingAlgorithmContest4.problem2.num459_RepeatedSubstringPattern;
 
-public class Solution_Attempt2 {
+public class Solution {
     public boolean repeatedSubstringPattern(String str) {
     	StringBuffer sb = new StringBuffer();
     	char c = str.charAt(0);
     	sb.append(c);
         for (int i = 1; i < str.length(); i++) {
-        	if (str.charAt(i) == c && testSub(str, sb.toString())) return true;
-        	sb.append(str.charAt(i));
+            char ca = str.charAt(i);
+        	if (ca == c && testSub(str, sb.toString())) return true;
+        	sb.append(ca);
         }
         return false;
     }
@@ -17,13 +18,15 @@ public class Solution_Attempt2 {
     	if (len0 % len1 == 0) {
     		int i = 0;
     		while (str.length() > 0) {
-    		    System.out.println("line 18");
     			i = str.indexOf(sub);
-    			if (i == 0) str = str.substring(i);
-    			else if (i == -1) return false;
+    			if (i == 0) str = str.substring(len1);
+    			else return false;
     		}
     		return true;
     	}
     	return false;
     }
 }
+//SolvedOn20161112Sat CodingDuration:29m40s97 Accepted @github.com/BryanBo-Cao,hackerrank.com/bryanbocao,leetcode.com/bryanbocao-0/,linkedin.com/in/bryanbocao
+
+

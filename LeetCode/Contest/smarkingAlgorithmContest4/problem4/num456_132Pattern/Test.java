@@ -1,4 +1,4 @@
-package smarkingAlgorithmContest4.question4.num456_132Pattern;
+package smarkingAlgorithmContest4.problem4.num456_132Pattern;
 
 public class Test {
 
