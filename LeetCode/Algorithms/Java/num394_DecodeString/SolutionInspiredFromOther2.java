@@ -4,6 +4,7 @@ package num394_DecodeString;
 public class SolutionInspiredFromOther2{
 	
 	int i = 0;
+	
 	public String decodeString(String s) {
 		StringBuilder sb = new StringBuilder(s);
 		return decodeString(sb);
@@ -15,10 +16,7 @@ public class SolutionInspiredFromOther2{
 		
 		while (i < sb.length()) {
 			if (Character.isDigit(sb.charAt(i))) {
-				while (Character.isDigit(sb.charAt(i))) {
-					n = n * 10 + sb.charAt(i) - '0';
-					i++;
-				}
+				while (Character.isDigit(sb.charAt(i))) n = n * 10 + sb.charAt(i++) - '0';
 				i++;	// '['
 				String nested = decodeString(sb);
 				
