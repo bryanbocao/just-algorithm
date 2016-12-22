@@ -1,7 +1,6 @@
 package ladders.USGiants.l2_IntegerArray.num138_SubarraySum;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Solution {
     /**
@@ -24,9 +23,6 @@ public class Solution {
             }
         }
         return ls;
-    }
-    private void addIntsToLs(List<Integer> ls, int[] nums, int i, int j) {
-        while (i <= j) ls.add(nums[i++]);
     }
 }
 //https://www.lintcode.com/en/problem/subarray-sum/
