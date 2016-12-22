@@ -9,13 +9,13 @@ class Revised_Solution_FromOther {
      */
 	public int strStr(String source, String target) {
 		if (source == null || target == null) return -1;
-		for (int i = 0; i <= source.length() - target.length(); i++)
-			if (match(source, i, target)) return i;
+		for (int i_s = 0; i_s <= source.length() - target.length(); i_s++)
+			if (match(source, i_s, target)) return i_s;
 		return -1;
 	}
-	private boolean match(String source, int start, String target) {
-		for (int i = 0; i < target.length(); i++, start++)
-			if (target.charAt(i) != source.charAt(start)) return false;
+	private boolean match(String source, int i_s, String target) {
+		for (int i_t = 0; i_t < target.length(); i_s++, i_t++)
+			if (source.charAt(i_s) != target.charAt(i_t)) return false;
 		return true;
 	}
 }
