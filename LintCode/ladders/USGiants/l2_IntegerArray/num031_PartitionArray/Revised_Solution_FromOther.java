@@ -12,8 +12,7 @@ public class Revised_Solution_FromOther {
      *return: The index after partition
      */
     public int partitionArray(int[] nums, int k) {
-        int pl = 0;
-        int pr = nums.length - 1;
+        int pl = 0, pr = nums.length - 1;
         while (pl <= pr) {
             while (pl <= pr && nums[pl] < k) pl++;
             while (pl <= pr && nums[pr] >= k) pr--;
