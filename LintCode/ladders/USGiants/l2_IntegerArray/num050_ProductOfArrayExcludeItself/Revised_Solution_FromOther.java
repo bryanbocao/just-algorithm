@@ -14,7 +14,7 @@ public class Revised_Solution_FromOther {
         if(A == null || A.size() == 0) return res;
 
         int len = A.size();
-        //f[i]:product from i to end
+        //pdctIToEnd[i]:product from i to end
         long[] pdctIToEnd = new long[len];
         pdctIToEnd[len - 1] = A.get(len - 1);
         for(int i = len - 2; i >= 0; i--) pdctIToEnd[i] = A.get(i) * pdctIToEnd[i + 1];
