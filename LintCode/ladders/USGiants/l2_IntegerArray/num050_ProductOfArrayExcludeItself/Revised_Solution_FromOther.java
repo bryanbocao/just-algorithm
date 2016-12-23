@@ -11,21 +11,21 @@ public class Revised_Solution_FromOther {
         // write your code
         //DP
         ArrayList<Long> res = new ArrayList<Long>();
-        if(A == null || A.size() == 0) return res;
+        if (A == null || A.size() == 0) return res;
 
         int len = A.size();
         //pdctIToEnd[i]:product from i to end
         long[] pdctIToEnd = new long[len];
         pdctIToEnd[len - 1] = A.get(len - 1);
-        for(int i = len - 2; i >= 0; i--) pdctIToEnd[i] = A.get(i) * pdctIToEnd[i + 1];
+        for (int i = len - 2; i >= 0; i--) pdctIToEnd[i] = A.get(i) * pdctIToEnd[i + 1];
 
         //product of numbers from 0 to the one before current element
         long pdct0ToPrev = 1;
         //product of numbers from 0 to current element
         long pdct0ToCrrnt = 1;
-        for(int i = 0; i < len; i++){
+        for (int i = 0; i < len; i++){
         	pdct0ToPrev = pdct0ToCrrnt;
-            if(i + 1 < len) res.add(pdct0ToPrev * pdctIToEnd[i + 1]);
+            if (i + 1 < len) res.add(pdct0ToPrev * pdctIToEnd[i + 1]);
             else res.add(pdct0ToPrev);
             pdct0ToCrrnt = pdct0ToPrev * A.get(i);
         }
