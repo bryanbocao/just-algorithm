@@ -1,7 +1,28 @@
 package ladders.USGiants.l2_IntegerArray.num064_MergeSortedArray;
 
-public class Solution {
-
+class Solution {
+    /**
+     * @param A: sorted integer array A which has m elements, 
+     *           but size of A is m+n
+     * @param B: sorted integer array B which has n elements
+     * @return: void
+     */
+    public void mergeSortedArray(int[] A, int m, int[] B, int n) {
+        int i = m-1, j = n-1, index = m + n - 1;
+        while (i >= 0 && j >= 0) {
+            if (A[i] > B[j]) {
+                A[index--] = A[i--];
+            } else {
+                A[index--] = B[j--];
+            }
+        }
+        while (i >= 0) {
+            A[index--] = A[i--];
+        }
+        while (j >= 0) {
+            A[index--] = B[j--];
+        }
+    }
 }
 //https://www.lintcode.com/en/problem/merge-sorted-array/
 /*
@@ -29,4 +50,4 @@ Related Problems
 Easy Space Replacement 18 %
 Easy Merge Two Sorted Arrays 35 %
 */
-//SolvedOn20161222Thu CodingDuration:9m00s20 @github.com/BryanBo-Cao,hackerrank.com/bryanbocao,leetcode.com/bryanbocao-0/,linkedin.com/in/bryanbocao
+//from http://www.jiuzhang.com/solutions/merge-sorted-array/
