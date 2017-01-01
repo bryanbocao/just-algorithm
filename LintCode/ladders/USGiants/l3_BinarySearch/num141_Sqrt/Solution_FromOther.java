@@ -1,6 +1,6 @@
-package ladders.USGiants.l3_BinarySearch;
+package ladders.USGiants.l3_BinarySearch.num141_Sqrt;
 
-class Revised_Solution_FromOther {
+class Solution_FromOther {
     /**
      * @param x: An integer
      * @return: The sqrt of x
@@ -9,13 +9,9 @@ class Revised_Solution_FromOther {
         int left = 1, right = x;
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            if (mid == x / mid) {
-                return mid;
-            } else if (mid < x / mid) {
-                left = mid + 1;
-            } else {
-                right = mid - 1;
-            }
+            if (mid == x / mid) return mid;
+            else if (mid < x / mid) left = mid + 1;
+            else right = mid - 1;
         }
         return right;
     }
