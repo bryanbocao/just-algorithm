@@ -8,6 +8,7 @@ class Solution {
      */
     public int binarySearch(int[] nums, int target) {
         //write your code here
+    	if (nums == null || nums.length == 0) return -1;
         int loI = 0, hiI = nums.length - 1, targetI = -1;
         while (true) {
             int midI = (loI + hiI) / 2;
