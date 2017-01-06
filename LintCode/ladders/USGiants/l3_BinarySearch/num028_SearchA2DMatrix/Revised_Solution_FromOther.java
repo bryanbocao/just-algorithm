@@ -14,7 +14,7 @@ public class Revised_Solution_FromOther {
 		int lo_i = 0, hi_i = rows * cols - 1;
 
 		while (lo_i <= hi_i) {
-			int mid_i = (lo_i + hi_i) / 2;
+			int mid_i = lo_i + (hi_i - lo_i) / 2;
 			int mid_v = matrix[mid_i / cols][mid_i % cols];
 			if (mid_v == target) return true;
 			else if (mid_v < target) lo_i = mid_i + 1;
