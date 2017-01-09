@@ -1,9 +1,5 @@
 package ladders.USGiants.l5_Greedy.num082_SingleNumber;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
-
 public class Solution_FromOther_MyRevision {
     /**
       *@param A : an integer array
@@ -11,14 +7,9 @@ public class Solution_FromOther_MyRevision {
       */
     public int singleNumber(int[] A) {
         // Write your code here
-        if (A == null || A.length == 0) return 0;
-        Set<Integer> set = new HashSet<Integer>();
-        for (int i = 0; i < A.length; i++) {
-            if (set.contains(A[i])) set.remove(A[i]);
-            else set.add(A[i]);
-        }
-        Iterator<Integer> it = set.iterator();
-        return it.next();
+        int result = 0;
+        for (int i = 0; i < A.length; i++) result ^= A[i];
+        return result;
     }
 }
 //http://www.lintcode.com/en/problem/single-number/
@@ -41,4 +32,5 @@ One-pass, constant extra space.
 Tags 
 Greedy
 */
-//SolvedOn20170108Sun CodingDuration:4m23s85 @github.com/BryanBo-Cao,hackerrank.com/bryanbocao,leetcode.com/bryanbocao-0/,linkedin.com/in/bryanbocao
+//Revised from https://discuss.leetcode.com/topic/1916/my-o-n-solution-using-xor
+//Author: https://discuss.leetcode.com/user/ivantsang
