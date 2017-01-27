@@ -18,7 +18,7 @@ package ladders.USGiants.l7_BinaryTree.num069_BinaryTreeLevelOrderTraversal;
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Solution_FromOther_MyPractice {
+public class Solution_FromOther_MyRevision_Practice {
     public List<List<Integer>> levelOrder(TreeNode root) {
         Queue<TreeNode> queue = new LinkedList<TreeNode>();
         List<List<Integer>> wrapList = new LinkedList<List<Integer>>();

@@ -11,7 +11,7 @@ package ladders.USGiants.l7_BinaryTree.num011_SearchRangeInBinarySearchTree;
  *     }
  * }
  */
-public class Solution_FromOther_MyPractice {
+public class Solution_FromOther_MyRevision_Practice {
     /**
      * @param root: The root of the binary search tree.
      * @param k1 and k2: range k1 to k2.
