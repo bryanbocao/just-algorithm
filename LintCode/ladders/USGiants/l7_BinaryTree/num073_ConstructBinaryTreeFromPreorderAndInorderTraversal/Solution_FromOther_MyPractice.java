@@ -9,19 +9,18 @@ package ladders.USGiants.l7_BinaryTree.num073_ConstructBinaryTreeFromPreorderAnd
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Solution {
+public class Solution_FromOther_MyPractice {
     public static TreeNode buildTree(int[] preorder, int[] inorder) {
         return helper(preorder, 0, inorder, 0, inorder.length - 1);
     }
 
     public static TreeNode helper(int[] preorder, int preStart, int[] inorder, int inStart, int inEnd) {
-        if (preStart > preorder.length - 1 || inStart > inEnd)
-            return null;
+        if (preStart > preorder.length - 1 || inStart > inEnd) return null;
         TreeNode root = new TreeNode(preorder[preStart]);
-        int target = inStart;
-        while (inorder[target] != preorder[preStart]) target++;
-        root.left = helper(preorder, preStart + 1, inorder, inStart, target - 1);
-        root.right = helper(preorder, preStart + target - inStart + 1, inorder, target + 1, inEnd);
+        int inTarget = inStart;
+        while (inorder[inTarget] != preorder[preStart]) inTarget++;
+        root.left = helper(preorder, preStart + 1, inorder, inStart, inTarget - 1);
+        root.right = helper(preorder, preStart + inTarget - inStart + 1, inorder, inTarget + 1, inEnd);
         return root;
     }
 }
@@ -51,3 +50,4 @@ Binary Tree
  */
 //From https://discuss.leetcode.com/topic/3695/my-accepted-java-solution/8
 //From https://discuss.leetcode.com/user/annieqt
+//PracticedOn20170124Tue 5Times

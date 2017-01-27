@@ -18,7 +18,7 @@ package ladders.USGiants.l7_BinaryTree.num069_BinaryTreeLevelOrderTraversal;
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Solution_MyPractice {
+public class Solution_FromOther_MyRevision {
     public List<List<Integer>> levelOrder(TreeNode root) {
         Queue<TreeNode> queue = new LinkedList<TreeNode>();
         List<List<Integer>> wrapList = new LinkedList<List<Integer>>();
@@ -73,4 +73,3 @@ Challenge 2: Use DFS algorithm to do it.
  */
 //From https://discuss.leetcode.com/topic/7647/java-solution-with-a-queue-used
 //Author: https://discuss.leetcode.com/user/soy
-//PracticedOn20170126 5Times

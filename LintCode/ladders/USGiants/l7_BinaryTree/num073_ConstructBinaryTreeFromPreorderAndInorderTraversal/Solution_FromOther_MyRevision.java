@@ -9,7 +9,7 @@ package ladders.USGiants.l7_BinaryTree.num073_ConstructBinaryTreeFromPreorderAnd
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Solution_MyRevision {
+public class Solution_FromOther_MyRevision {
     public static TreeNode buildTree(int[] preorder, int[] inorder) {
         return helper(preorder, 0, inorder, 0, inorder.length - 1);
     }
