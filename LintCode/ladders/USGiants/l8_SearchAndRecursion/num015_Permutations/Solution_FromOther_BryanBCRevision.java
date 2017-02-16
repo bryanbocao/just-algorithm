@@ -19,7 +19,7 @@ public class Solution_FromOther_BryanBCRevision {
 
     public void helper(List<List<Integer>> lsls, List<Integer> ls, int[] nums){
         if (ls.size() == nums.length) {
-            lsls.add(new ArrayList<Integer>(ls)); //Why not lsls.add(ls); ?
+            lsls.add(new ArrayList<Integer>(ls));
             return ;
         }
 
@@ -61,3 +61,9 @@ For nums = [1,2,3], the permutations are:
 ]
  */
 //From http://www.jiuzhang.com/solutions/permutations/
+/*
+Note:
+In line 22: lsls.add(new ArrayList<Integer>(ls));
+Why not: ? lsls.add(ls);
+如果是rst.add(list),你会看到最后的结果都是空，因为Java中所有对象都是引用，那么rst.add(list)以后，你在主程序你里继续操作修改list以后，由于list之前add进去是引用，那么rst里面的list对象也会被修改。所以我们add到rst的时候需要备份一下放进去，这样new ArrayList(list) 和 list就两个内容相同但是是不同的对象了，使得修改list不会影响到rst里面的内容。
+ */
