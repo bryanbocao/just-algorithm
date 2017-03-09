@@ -58,3 +58,4 @@ Divide and Conquer Recursion Binary Search Tree Binary Tree
 */
 //From https://discuss.leetcode.com/topic/7179/my-simple-java-solution-in-3-lines
 //Author: https://discuss.leetcode.com/user/sruzic
+//PracticeOn20170308Wed 5Times
