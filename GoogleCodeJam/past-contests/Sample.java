@@ -19,10 +19,10 @@ public class Sample {
 		
 		int t = br.read();
 		
-		for (int i = 1; i <= t; i++) {
+		for (int ti = 1; ti <= t; ti++) {
 			String inputLine = br.readLine();
 			int input = Integer.valueOf(inputLine);
-			StringBuilder output = new StringBuilder("Case #" + i + ": ");
+			StringBuilder output = new StringBuilder("Case #" + ti + ": ");
 			
 			//start - main algorithm
 			
