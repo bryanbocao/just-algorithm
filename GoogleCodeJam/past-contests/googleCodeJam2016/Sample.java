@@ -1,4 +1,4 @@
-package googleCodeJam;
+package googleCodeJam2016;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -22,14 +22,14 @@ public class Sample {
 		for (int ti = 1; ti <= t; ti++) {
 			String inputLine = br.readLine();
 			int input = Integer.valueOf(inputLine);
-			StringBuilder outputSB = new StringBuilder("Case #" + ti + ": ");
+			StringBuilder output = new StringBuilder("Case #" + ti + ": ");
 			
 			//start - main algorithm
 			
 			
 			//end - main algorithm
 			
-			bw.write(outputSB.toString());
+			bw.write(output.toString());
 			bw.newLine();
 		}
 		
