@@ -14,13 +14,13 @@ import java.util.Set;
 public class A {
 	public static void main(String[] args) throws IOException, ClassNotFoundException{
 		
-		String dataFileName = new String("A-small-practice");
+		String dataFileName = new String("A-large-practice");
 		String currentPackagePath = getCurrentPackagePath();
 		BufferedReader br = new BufferedReader(new FileReader(new File(currentPackagePath + dataFileName + ".in")));
 		BufferedWriter bw = new BufferedWriter(new FileWriter(new File(currentPackagePath + dataFileName + ".txt")));
 		
 		int t = Integer.parseInt(br.readLine());
-		System.out.println(t);
+		System.out.println("Test cases number: " + t);
 		for (int ti = 1; ti <= t; ti++) {
 			String inputLine = br.readLine();
 			int input = Integer.valueOf(inputLine);
@@ -50,6 +50,8 @@ public class A {
 			bw.newLine();
 		}
 		
+		System.out.println("Done");
+		
 		br.close();
 		bw.close();
 	}
@@ -63,4 +65,4 @@ public class A {
 		return packageSB.toString();
 	}
 }
-//CodingDuration: 19m51s96 SmallInput Correct
+//CodingDuration: 19m51s96 Small&LargeInput Correct
