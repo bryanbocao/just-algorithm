@@ -58,3 +58,4 @@ From https://discuss.leetcode.com/topic/13248/very-concise-java-ac-solution
 Author https://discuss.leetcode.com/user/wcyz666
 */
 //PracticedOn20170407Fri 5Times
+//PracticedOn20170611Sun 5Times
